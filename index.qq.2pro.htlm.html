@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ注册</title>
+    <style>
+        body {
+            /* 背景图设置 */
+            background-image: url('https://ts1.tc.mm.bing.net/th/id/R-C.5c3db9e5b80a091c1f0f8ac8961fd244?rik=3fgoTRKv8WIGaQ&riu=http%3a%2f%2fpic.uzzf.com%2fup%2f2019-11%2f2019112610164764860.jpg&ehk=%2f%2f5ZqordxDNN5Cvju44TfQCcPyrjC4D9qMOCW3bSpiM%3d&risl=&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0; /* 去除默认margin，避免页面边缘留白 */
+            min-height: 100vh; /* 确保背景图覆盖整个屏幕高度 */
+        }
+
+        /* 容器：集中放置所有内容，避免分散定位 */
+        .container {
+            position: relative;
+            width: 1000px; /* 整体宽度 */
+            margin: 0 auto; /* 水平居中 */
+            padding: 40px;
+        }
+
+        /* 圆形图标样式 */
+        .circle-icon {
+            position: absolute;
+            top: 250px;
+            right: 50px; /* 靠右放置，避免固定left导致超出屏幕 */
+            cursor: pointer;
+        }
+
+        .circle-icon img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* 表单区域样式 */
+        .form-area {
+            position: absolute;
+            left: 150px; /* 左侧距离，根据需要调整 */
+            top: 180px;
+            background-color: rgba(255, 255, 255, 0.8); /* 半透明背景，增强可读性 */
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        /* 标题样式 */
+        .form-title {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* 表格样式优化 */
+        .form-table td {
+            padding: 10px 0; /* 行间距 */
+        }
+
+        .form-table td:first-child {
+            padding-right: 15px; /* 标签与输入框间距 */
+            font-weight: bold;
+        }
+
+        /* 输入框样式 */
+        .form-input {
+            padding: 8px;
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 圆形图标（登录入口） -->
+    <a href="http://localhost:63342/java.01/index.000.html.html?_ijt=chne367esls03es86moluc5apd&_ij_reload=RELOAD_ON_SAVE" class="circle-icon">
+        <img src="https://ts1.tc.mm.bing.net/th/id/OIP-C.DpA1ZubhWT3RdJ_d9At5ZgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+             alt="点击图标登录">
+    </a>
+
+    <!-- 表单区域（包含标题和所有输入项） -->
+    <div class="form-area">
+        <h1 class="form-title"><strong>点击右侧图标登录</strong></h1>
+        <form action="">
+            <table class="form-table">
+                <!-- 账号输入行 -->
+                <tr>
+                    <td>账号</td>
+                    <td>
+                        <input type="text"
+                               placeholder="输入账号"
+                               name="username" > <!-- 修正name属性 -->
+
+                    </td>
+                </tr>
+                <!-- 密码输入行 -->
+                <tr>
+                    <td>密码</td>
+                    <td>
+                        <input type="password"
+                               placeholder="输入密码"
+                               name="password" > <!-- 修正name属性 -->
+
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>
